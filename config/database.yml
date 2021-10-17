@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: rails_js_detach_production
-  username: rails_js_detach
-  password: <%= ENV['RAILS_JS_DETACH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
